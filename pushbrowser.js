@@ -3,8 +3,8 @@ http = require('http');
 var quoteReader = function () { 
 	
 	var city = 'Sydney';
-	var getURL = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=metric';
-	//var getURL = "http://finance.yahoo.com/webservice/v1/symbols/ING/quote?format=json";
+	//var getURL = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=metric';
+	var getURL = "http://finance.yahoo.com/webservice/v1/symbols/IBM/quote?format=json";
 	http.get(getURL, function(res){
 	
 	res.setEncoding('utf8');
@@ -22,11 +22,11 @@ var quoteReader = function () {
 
 		
 		var obj = JSON.parse(txt);
-		//var quote = obj.list.resources[0].resource.fields
+		var quote = obj.list.resources[0].resource.fields
 		//console.log(txt)
-		//var txtStr = quote.name + " Price " + parseFloat(quote.price) + " USD " + "Volume " + quote.volume
+		var txtStr = quote.name + " Price " + parseFloat(quote.price) + " USD " + "Volume " + quote.volume
 		
-		var txtStr = city + " " + obj.main.temp + " deg Celcius Humidity " + obj.main.humidity + " %"
+		//var txtStr = city + " " + obj.main.temp + " deg Celcius Humidity " + obj.main.humidity + " %"
 		console.log(txtStr);
 		pusher.trigger('test_channel', 'my_event', {
 		  "message": txtStr

@@ -1,3 +1,7 @@
+/*
+Read a file using a call back and
+*/
+
 var fs = require('fs');
 var filename = './my.txt';
 fs.readFile(filename, 'utf-8', function (err,data) {
