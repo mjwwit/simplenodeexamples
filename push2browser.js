@@ -5,7 +5,7 @@ var quoteReader = function () {
 	var city = 'Sydney';
 	//var getURL = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=metric';
 	
-	var getURL = "http://finance.yahoo.com/webservice/v1/symbols/BAC/quote?format=json";
+	var getURL = "http://finance.yahoo.com/webservice/v1/symbols/INGA.AS/quote?format=json";
 	
 	http.get(getURL, function(res){
 	
