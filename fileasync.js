@@ -11,4 +11,4 @@ fs.readFile(filename, 'utf-8', function (err,data) {
   console.log(data);
   console.log('Done reading file : ' + filename);
 });
-console.log('Done Program');
+console.log('Done Program Async');

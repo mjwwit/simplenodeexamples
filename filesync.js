@@ -1,7 +1,7 @@
 var fs = require("fs");
 
 try {
-	var file = fs.readFileSync("my.tx1t", "utf-8");
+	var file = fs.readFileSync("my.txt", "utf-8");
 }
 catch(ex)
 {
@@ -14,3 +14,5 @@ console.log("<--- File --->");
 if (file){
 	console.log(file);
 }
+
+console.log('Done Program Sync');
