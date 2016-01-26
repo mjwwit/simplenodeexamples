@@ -1,8 +1,11 @@
 {
-  "name": "Pusher",
+  "name": "simple-node-examples",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node http2.js"
+  },
+  "dependencies": {
+    "colors": "^1.1.2"
   }
 }

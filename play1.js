@@ -1,14 +1,11 @@
-var f = function foo()
-{
-	var inx = 0;
-	console.log("foo()")
-	
-	return b = function bar()
-	{
-	 	return inx++;
-	}
-}
+var f = function foo() {
+    var inx = 0;
+    console.log('foo()');
 
+    return function bar() {
+        return inx++;
+    };
+};
 
 var x = new f();
 console.log(typeof x);

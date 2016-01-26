@@ -1,13 +1,12 @@
-var hfv = function(){
-	console.log("Hello, 1 hr Node");
-	var i = 0;
+var hfv = function () {
+    console.log('Hello, 1 hr Node');
+    var i = 0;
 
-	return pv = function()
-	{
-		i++;
-		console.log( i +  ".  to People");
-	}
-}
+    return function () {
+        i++;
+        console.log(i + '.  to People');
+    };
+};
 
 console.log(typeof hfv);
 

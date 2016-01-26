@@ -1,18 +1,15 @@
-var x = function foo(num)
-{
+var x = function foo(num) {
     var bar;
     var quux = num;
-    
-    console.log("Entered and leaving foo()" + quux)   
-    
-    return zip = function()
-    {
+
+    console.log('Entered and leaving foo()' + quux);
+
+    return function () {
         //var quux;
         bar = true;
-        console.log("In zip" + quux++)
-    }
-}
-
+        console.log('In zip' + quux++);
+    };
+};
 
 var newObj = x(100);
 newObj();

@@ -1,15 +1,13 @@
+setInterval(function () {
+    console.log('in Amsterdam.');
+    while (true) {
 
-setInterval(function(){
-  console.log('in Amsterdam.');  
-  while(true)
-  {
+    }
+}, 5000);
 
-  }
-},5000)
-
-setInterval(function(){
-  console.log('in London.');  
-},1000)
+setInterval(function () {
+    console.log('in London.');
+}, 1000);
 
 
-console.log('I am')
+console.log('I am');
